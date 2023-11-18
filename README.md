@@ -38,5 +38,5 @@ Recuerda reiniciar tu servidor después de realizar cambios en la configuración
 
 En el juego, los jugadores pueden enviar un anuncio usando el comando `/anuncio`. El script utilizará la configuración del trabajo actual del jugador para mostrar un anuncio con el estilo correspondiente.
 
-![Preview](https://streamable.com/pbvpoj)
-![Discord](https://discord.gg/BTMEdqAr5H)
+[Preview](https://streamable.com/pbvpoj)
+[Discord](https://discord.gg/BTMEdqAr5H)
