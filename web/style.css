@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif; /* Cambia 'Arial' por el tipo de letra que prefieras */
+}
+
+#anuncio-container {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semi-transparente */
+    border: 0px solid #fff; /* Borde blanco */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Brillo blanco */
+    display: none;
+    max-width: 400px; /* Ancho máximo del contenedor */
+    animation: aparecer 0.5s ease-in-out; /* Animación de entrada */
+}
+
+#barra-trabajo {
+    background-color: #3498db; /* Color de la barra de trabajo */
+    color: #fff;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-family: 'Arial', sans-serif; /* Cambia 'Arial' por el tipo de letra que prefieras */
+}
+
+#anuncio-content {
+    display: flex;
+    align-items: center;
+}
+
+#logo-container {
+    padding: 10px;
+}
+
+#logo {
+    max-width: 50px; /* Ancho máximo del logo */
+    max-height: 50px; /* Altura máxima del logo */
+}
+
+#mensaje-container {
+    padding: 10px;
+    text-align: center;
+}
+
+#mensaje {
+    color: #fff; /* Color del texto */
+    font-size: 16px; /* Tamaño de la fuente */
+    font-weight: bold; /* Letra más rellena */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* Sombra para resaltar el texto */
+    margin: 0;
+}
+
+/* Animación de salida */
+@keyframes desaparecer {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Animación de salida */
+@keyframes aparecer {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#anuncio-container.salida {
+    animation: desaparecer 0.5s ease-in-out; /* Animación de salida */
+    display: none;
+}
